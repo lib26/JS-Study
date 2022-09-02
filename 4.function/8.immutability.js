@@ -1,4 +1,4 @@
-// 함수내부에서 외부로부터 주어진 인자의 값을 변경하는 것은 💩
+// 💩함수내부에서 외부로부터 주어진 인자의 값을 변경하는 것은 💩
 // 상태변경이 필요한 경우에는, 새로운 상태를(오브젝트, 값) 만들어서 반환해야 함 ✨
 // 원시값 - 값에 의한 복사
 // 객체값 - 참조에 의한 복사 (메모리주소)
@@ -10,6 +10,8 @@ const value = 4;
 display(value);
 console.log(value);
 
+//밑에 코드는 나쁜 예시임
+// 이렇게 오브젝트는 참조에 의한 복사이니....
 function displayObj(obj) {
   obj.name = 'Bob'; // ❌❌❌❌❌❌ 외부로 부터 주어진 인자(오브젝트)를 내부에서 변경 ❌
   console.log(obj);
@@ -18,6 +20,8 @@ const ellie = { name: 'Ellie' };
 displayObj(ellie);
 console.log(ellie);
 
+//밑에 코드는 배열편에서 배울거긴 함
 function changeName(obj) {
-  return { ...obj, name: 'Bob' };
+  //이름부터 변경하는 느낌을 주도록!
+  return { ...obj, name: 'Bob' }; // 반환할때는 새로운 오브젝트 만들기!
 }

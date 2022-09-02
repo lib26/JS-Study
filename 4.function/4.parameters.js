@@ -8,7 +8,8 @@ function add(a = 1, b = 1) {
   console.log(arguments[1]);
   return a + b;
 }
-add();
+let v = 3;
+console.log(`${add(2)}    ${v}`);
 
 // Rest 매개변수 Rest Parameters
 function sum(a, b, ...numbers) {
