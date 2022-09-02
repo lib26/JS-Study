@@ -16,5 +16,7 @@ class Fruit {
 }
 
 const apple = new Fruit('apple', '🍎');
-//apple.#name = '오렌지'; // #field는 외부에서 접근이 불가능함
+//apple.#name = '오렌지';
+// #field는 외부에서 접근이 불가능함.
+// 즉 #이 붙은 속성 혹은 함수는 class 내부에서만 접근이 가능하다.
 console.log(apple);

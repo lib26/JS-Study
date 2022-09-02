@@ -10,7 +10,7 @@ console.log(result);
 // 사용예: 조건이 맞지 않는 경우 함수 도입부분에서 함수를 일찍이 종료함!
 function print(num) {
   if (num < 0) {
-    return;
+    return; //종료하는 용도로 많이많이 사용함!!!!
   }
   console.log(num);
 }

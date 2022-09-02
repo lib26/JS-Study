@@ -27,5 +27,5 @@ console.log(apple.name);
 console.log(apple.emoji);
 apple.display();
 
-// obj는 객체이고, 그 어떤 클래스의 인스턴스도 아니다.
+// obj는 객체이고, 그 어떤 클래스의 인스턴스도 아니다. 즉 인스턴스와 구분되는 말이다.
 const obj = { name: 'ellie' };

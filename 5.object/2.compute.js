@@ -13,7 +13,7 @@ function getValue(obj, key) {
 console.log(getValue(obj, 'name'));
 
 function addKey(obj, key, value) {
-  obj[key] = value;
+  obj.key = value;
 }
 addKey(obj, 'job', 'engineer');
 console.log(obj);
