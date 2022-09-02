@@ -11,6 +11,7 @@ class Fruit {
   }
 
   display = () => {
+    //function은 붙이지 않는다
     console.log(`${this.name}: ${this.emoji}`);
   };
 }

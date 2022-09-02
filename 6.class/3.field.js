@@ -1,5 +1,7 @@
 // 접근제어자 - 캡슐화
-// private(#), public(기본), protected
+// private(#), public(기본), protected(상속된 자식 클래스에서만 접근 가능)
+// 근데 이런 키워드는 JS에는 없어
+
 class Fruit {
   #name;
   #emoji;
