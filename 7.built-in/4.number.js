@@ -35,7 +35,8 @@ console.log(num4.toPrecision(2)); // 전체 자릿수 표기가 안될때는 지
 if (Number.EPSILON > 0 && Number.EPSILON < 1) {
   console.log(Number.EPSILON); // 0과 1사이에서 나타낼 수 있는 가장 작은 숫자
 }
-const num = 0.1 + 0.2 - 0.2; // 0.1
+const num = 0.1 + 0.2 - 0.2; // 0.10000000000003 이 나온다. 예상치 못한 오차가 나옴
+// 그래서 이 오차를 파악하기 위해 EPSILON 을 사용
 console.log(num);
 
 function isEqual(original, expected) {

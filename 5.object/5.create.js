@@ -13,7 +13,7 @@
 // };
 
 // 생성자 함수 => Fruit 처럼 처음 대문자로 하면 생성자 함수 만들 수 이씅ㅁ
-function ruit(name, emoji) {
+function Fruit(name, emoji) {
   this.name = name;
   this.emoji = emoji;
   this.display = () => {
@@ -22,7 +22,7 @@ function ruit(name, emoji) {
   // return this; // 생략가능
 }
 
-const apple = new ruit('apple', '🍎');
+const apple = new Fruit('apple', '🍎');
 const orange = new Fruit('orange', '🍊');
 
 console.log(apple);

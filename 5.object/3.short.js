@@ -10,4 +10,5 @@ function makeObj(name, age) {
     age, //age : age
   };
 }
+
 console.log(makeObj(x, y));

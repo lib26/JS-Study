@@ -23,5 +23,5 @@ console.log(!!NaN);
 console.log(!!1);
 console.log(!!-1);
 console.log(!!'text');
-console.log(!!{});
+console.log(!!{}); //오브젝트
 console.log(!!Infinity);

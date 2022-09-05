@@ -1,6 +1,10 @@
 // 함수 선언문 function name() { }
 // 함수 표현식 const name = function () { }
 // 함수도 객체이기때문에 이렇게 할당이 가능. 즉 add에는 함수의 주소값이 들어감.
+let add = function (a, b) {
+  return a + b;
+};
+console.log(add(1, 2));
 
 // 화살표 함수 const name = () => { }
 // function 쓰기 귀찮을 때 이렇게 하나봄

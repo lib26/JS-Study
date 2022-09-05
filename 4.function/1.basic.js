@@ -1,3 +1,4 @@
+// 함수 : 특정한 일을 수행하는 코드의 집합 -> 유지보수성, 재사용성, 가독성 good
 // 사용예제 1
 function sum(a, b) {
   console.log('function');

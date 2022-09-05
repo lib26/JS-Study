@@ -8,6 +8,7 @@ let apple = {
   color: 'red',
   display: '🍎',
 };
+
 console.log(apple);
 console.log(apple.name);
 console.log(apple.color);

@@ -35,6 +35,7 @@ console.log(apple);
 console.log(orange);
 console.log(apple.name);
 console.log(apple.emoji);
+
 apple.display();
 
 // built-in이라는 static 함수가 있는데

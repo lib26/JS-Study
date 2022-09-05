@@ -18,6 +18,7 @@ const array = ids.split(', ');
 console.log(array);
 
 // 3. 1초에 한번씩 시계를 (날짜포함) 출력해보자
+// 첫번째 인자는 콜백 함수이다. 두번째 인자는 이 콜백 함수를 몇초마다 호출할지 결정
 setInterval(() => {
   const now = new Date();
   console.log(now.toLocaleString('ko-KR'));

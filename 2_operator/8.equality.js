@@ -7,16 +7,16 @@ console.log(2 == 2);
 console.log(2 != 2);
 console.log(2 != 3);
 console.log(2 == 3);
-console.log(2 == '2');
-console.log(2 === '2'); // ✨
-console.log(true == 1);
+console.log(2 == '2'); //타입은 다르지만 담고있는게 같아서 true
+console.log(2 === '2'); // 타입이 달라서 false ✨
+console.log(true == 1); // 1을 boolean으로 바꾸면 true니까 true
 console.log(true === 1);
 console.log(false == 0);
 console.log(false === 0);
 console.clear();
 
 const obj1 = {
-  name: 'js',
+  name: 'js', 
 };
 const obj2 = {
   name: 'js',

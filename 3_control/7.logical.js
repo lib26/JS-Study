@@ -22,4 +22,4 @@ console.log(false || true); // true
 console.log(false || false); // false
 
 console.log(!'text');
-console.log(!!'text');
+console.log(!!'text'); //true

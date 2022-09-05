@@ -13,7 +13,6 @@ set value(setValue) {
  */
 
 class Student {
-  #value = '인범';
   constructor(firstName, lastName) {
     this.firstName = firstName;
     this.lastName = lastName;

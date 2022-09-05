@@ -12,8 +12,8 @@ for (let i = 0; i < fruits.length; i++) {
 }
 // const fruits = ['🍌', '🍎', '🍇', '🍑'];
 // 추가, 삭제 - 좋지 않은 방식 💩
-fruits[6] = '🍓';
+fruits[6] = '🍓';  // 인덱스로 바로 접근은 ㄴㄴ. 
 console.log(fruits);
 
-delete fruits[1];
+delete fruits[1]; // 이렇게하면 1번째 자리에 빈 공간이 생겨버림
 console.log(fruits);
