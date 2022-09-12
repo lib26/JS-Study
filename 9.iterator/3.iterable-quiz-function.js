@@ -1,3 +1,4 @@
+// 위의 퀴즈를 재사용 가능하게 함수버전으로 만든 퀴즈임
 // [Symbol.iterator](): Iterator{ next(): {value, done}};
 // 0부터 10이하까지 숫자의 2배를 순회하는 이터레이터(반복자) 만들기!
 
@@ -14,6 +15,7 @@ function makeIterable(initialValue, maxValue, callback) {
   };
 }
 
+// multiple에는 iterator가 반환됨
 const multiple = makeIterable(0, 10, (n) => n * 2);
 for (const num of multiple) {
   console.log(num);
