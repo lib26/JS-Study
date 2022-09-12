@@ -10,7 +10,7 @@ const array = ['🍌', '🍓', '🍇', '🍓'];
 const result = replace(array, '🍓', '🥝');
 console.log(result);
 
-// 퀴즈2:
+// 퀴즈2: filter, reduce 두가지 방법이 있음
 // 배열과 특정한 요소를 전달받아,
 // 배열안에 그 요소가 몇개나 있는지 카운트 하는 함수 만들기
 // input: [ '🍌', '🥝', '🍇', '🥝' ], '🥝'
@@ -43,5 +43,5 @@ const nums = [3, 16, 5, 25, 4, 34, 21];
 
 const result2 = nums
   .filter((num) => num > 5) //
-  .reduce((avg, num) => avg + num / array.length, 0);
+  .reduce((avg, num, _, array) => (avg += num / array.length), 0);
 console.log(result2);
