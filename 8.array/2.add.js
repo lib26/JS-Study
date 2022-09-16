@@ -1,3 +1,4 @@
+// 보통 이렇게 만듬
 const fruits = ['🍌', '🍎', '🍇', '🍑'];
 
 // 배열 아이템을 참조하는 방법
@@ -12,7 +13,7 @@ for (let i = 0; i < fruits.length; i++) {
 }
 // const fruits = ['🍌', '🍎', '🍇', '🍑'];
 // 추가, 삭제 - 좋지 않은 방식 💩
-fruits[6] = '🍓';  // 인덱스로 바로 접근은 ㄴㄴ. 
+fruits[6] = '🍓';  // 인덱스로 바로 접근은 ㄴㄴ. 대신 fruits.lentgh 사용하셈
 console.log(fruits);
 
 delete fruits[1]; // 이렇게하면 1번째 자리에 빈 공간이 생겨버림

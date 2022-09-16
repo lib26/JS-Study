@@ -2,6 +2,7 @@
 const fruits = ['🍌', '🍎', '🍇', '🍌', '🍎', '🍑'];
 //  ['🍌', '🍎', '🍇', '🍑']
 function removeDuplication(array) {
+  //set은 중복이 불가능하니까 바로 set해버리면 그만이다.
   return [...new Set(array)];
 }
 console.log(removeDuplication(fruits));

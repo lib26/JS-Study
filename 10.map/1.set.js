@@ -1,4 +1,5 @@
 // Set
+// 중복 없음, 순서 없음
 const set = new Set([1, 2, 3]);
 console.log(set);
 
@@ -9,7 +10,7 @@ console.log(set.size);
 console.log(set.has(2));
 console.log(set.has(6));
 
-// 순회
+// set은 iterable하기 때문에 순회 가능
 set.forEach((item) => console.log(item));
 for (const value of set.values()) {
   console.log(value);
@@ -18,7 +19,7 @@ for (const value of set.values()) {
 // 추가
 set.add(6);
 console.log(set);
-set.add(6);
+set.add(6); // 중복 안되니 그냥 무시된다.
 console.log(set);
 
 // 삭제
