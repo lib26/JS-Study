@@ -2,8 +2,9 @@
 // ES11 (ECMAScript 2020)
 // ?.
 // null 또는 undefined을 확인할때
+
 let item = { price: 1 };
-const price = item?.price; // 아이템이 truthy 하면 할당해.
+const price = item?.price; // 아이템이 truthy 하면 할당해 = 아이템이 담겨있으면 할당해.
 //item && item.price 를 위에처럼 간단하게 줄여쓴거지
 console.log(price);
 

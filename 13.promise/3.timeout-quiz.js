@@ -7,8 +7,11 @@ function runInDelay(callback, seconds) {
   if (!seconds || seconds < 0) {
     throw new Error('seconds는 0보다 커야 함');
   }
+
+  // setTimeout이 성공하면 callback 함수가 실행된다.
   setTimeout(callback, seconds * 1000);
 }
+
 try {
   runInDelay(() => {
     console.log('타이머 완료!');

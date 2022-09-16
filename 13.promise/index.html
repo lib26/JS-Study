@@ -8,11 +8,21 @@
   </head>
   <body>
     <script>
+      // fetch는 response를 resolve하는 promise를 리턴한다
+      // 즉, return Promise.resolve(response); 이런 느낌.
+      // response는 객체이다.
+      // 그래서 .then((response)=>...) 이렇게 response를 받아올 수 있음
+
       fetch(
         'https://www.7timer.info/bin/astro.php?lon=113.2&lat=23.1&ac=0&unit=metric&output=json&tzshift=0'
       )
         .then((response) => {
           return response.json();
+          // response 바디 안에 있는 json 문자열을 js에서 쓸 수 있는 obj으로 변환해줌.
+          // 근데 response.json()은 promise객체를 return 한다
+          // 즉, return Promise.resolve(data); 이런 느낌.
+          // 여기서 data는 json에서 obj로 변환된 data인듯
+          // 그래서 chaining을 해줘서 처리해야함. 그래서 다음 줄에 .then이 나옴
         })
         .then((data) => console.log(data.dataseries));
     </script>

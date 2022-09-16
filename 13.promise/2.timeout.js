@@ -5,4 +5,4 @@ function execute() {
   }, 2000);
   console.log('3');
 }
-execute();
+execute(); // 결과는 132

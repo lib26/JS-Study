@@ -10,8 +10,8 @@ if (obj1 || obj2) {
   console.log('둘다 true!');
 }
 
-let result = obj1 && obj2;
-console.log(result);
+let result = obj1 && obj2; // obj2가 result에 들어감. 즉 앞에가 true라서.
+console.log(result); // 고양이 출력됨
 
 result = obj1 || obj2;
 console.log(result);
@@ -25,6 +25,7 @@ function changeOwner(animal) {
   }
   animal.owner = '바뀐주인!';
 }
+
 function makeNewOwner(animal) {
   if (animal.owner) {
     throw new Error('주인이 있어');
@@ -49,13 +50,13 @@ console.log(price);
 
 // 기본값을 설정
 // default parameter 전달하지 않거나, undefined이 받아졌을 때만 설정
-// || 값이 falshy한 경우 설정(할당): 0, -0, null, undefined, '' 
+// || 값이 falshy한 경우 설정(할당): 0, -0, null, undefined, ''
 
 function print(message) {
   const text = message || 'Hello';
   console.log(text);
 }
-print();
-print(undefined);
-print(null);
-print(0);
+print(); // Hello
+print(undefined); // Hello
+print(null); // Hello
+print(0); // Hello
