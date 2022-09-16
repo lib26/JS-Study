@@ -12,5 +12,7 @@ function runInDelay(callback, seconds) {
 try {
   runInDelay(() => {
     console.log('타이머 완료!');
-  }, 2);
-} catch (error) {}
+  }, 1);
+} catch (error) {
+  console.log('에러임');
+}
