@@ -27,7 +27,7 @@ cat.play();
  * 화살표 함수의 특징
  * 1. 문법이 깔끔함
  * 2. 생성자 함수로 사용이 불가능 (즉, 무거운 프로토타입을 만들지 ❌)
- * 3. 함수 자체 arguments
+ * 3. 함수 자체 arguments(인자에 대해 모든 정보를 가지고 있는 객체) 사용 안함
  * 4. this에 대한 바인딩이 정적으로 결정됨
  *    - 함수에서 제일 근접한 상위 스코프의 this에 정적으로 바인딩됨
  */
@@ -38,12 +38,12 @@ function sum(a, b) {
 sum(1, 2);
 
 const add = (a, b) => {
-  console.log(arguments); // arrow 함수 외부의 arguments를 참조만 함
+  console.log(arguments); // a,b 가 아닌 arrow 함수 외부의 arguments를 참조만 함
 };
 add(1, 2);
 
 const printArrow = () => {
-  console.log(this);
+  console.log(this); // 모듈의 대한 정보. 노드니까
 };
 printArrow();
 cat.printArrow = printArrow;

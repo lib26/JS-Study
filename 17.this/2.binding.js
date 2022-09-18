@@ -23,13 +23,17 @@ const dog = new Dog('멍멍');
 cat.printName();
 dog.printName();
 
-dog.printName = cat.printName;
-dog.printName();
-cat.printName();
+dog.printName = cat.printName; 
+dog.printName(); // 고양이의 이름을 출력한다옹 멍멍
+//ㄴ java였으면 고양이의 이름을 출력한다옹 냐옹 
+cat.printName(); // 고양이의 이름을 출력한다옹 냐옹
 
 function printOnMonitor(printName) {
   console.log('모니터를 준비하고!, 전달된 콜백을 실행!');
-  printName();
+  printName(); // undefined. 왜? 이 함수 안에서의 this 아무것도 아니니까.
+  // c#이나 java였으면 this가 정적으로 할당되니까 고양이로 영원히 this가 바인딩 되지만
+  // js this가 동적으로 결정되니까 호출하는 위치(caller)에 의해 결정된다.
+  // 즉 여기 함수 내부에서는 this가 global this임
 }
 
 printOnMonitor(cat.printName);

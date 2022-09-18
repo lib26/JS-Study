@@ -20,7 +20,6 @@ function Dog(name, emoji, owner) {
 // Dog.prototype = Object.create(Object.prototype);
 // Dog의 프로토타입은 원래 Object였지만 Animal로 바꿔주겠다.
 Dog.prototype = Object.create(Animal.prototype);
-
 Dog.prototype.play = function () {
   console.log('같이 놀자옹!');
 };

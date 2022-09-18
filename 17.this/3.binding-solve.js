@@ -4,8 +4,8 @@ function Cat(name) {
   // 화살표 함수 밖에서 제일 근접한 스코프의 this를 가리킴
   this.printName = () => {
     console.log(`고양이의 이름을 출력한다옹: ${this.name}`);
-  };
-  // 1. bind 함수를 이용해서 수동적으로 바인딩 해주기
+  }; 
+  // 1. bind 함수를 이용해서 수동적으로 바인딩 해주기. 근데 이건 귀찮으니 2번으로 하자.
   //   this.printName = this.printName.bind(this);
 }
 

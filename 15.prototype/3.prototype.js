@@ -1,3 +1,7 @@
+// prototype도 이제는 별로 안쓰이고 class로 대체된다.
+// prototype레벨의 함수를 만들 필요 없고
+// Object.create은 extends로 대체된다.
+
 // const dog1 = { name: '뭉치', emoji: '🐶' };
 // const dog2 = { name: '코코', emoji: '🐩' };
 
