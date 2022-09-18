@@ -1,17 +1,3 @@
-'use strict';
-/**
- * 글로벌 컨텍스트의 this
- *  - 브라우저: window
- *  - 노드: 모듈
- */
-const x = 0;
-module.exports.x = x;
-console.log(this);
-console.log(globalThis);
-// globalThis.setTimeout()
-// setTimeout()
-console.clear();
-
 /**
  * 함수 내부에서의 this
  * 엄격모드에서는 undefined
