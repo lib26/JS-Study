@@ -1,16 +1,19 @@
 // const dog1 = { name: '뭉치', emoji: '🐶' };
 // const dog2 = { name: '코코', emoji: '🐩' };
 
+//생성자 함수.. 요즘은 안쓰임
 function Dog(name, emoji) {
   this.name = name;
   this.emoji = emoji;
-  // 인스턴스 레벨의 함수
+  // 인스턴스 레벨의 함수.
+  // 즉 모든 인스턴스마다 이 함수를 가지고 있음. 메모리 낭비..
   /* this.printName = () => {
     console.log(`${this.name} ${this.emoji}`);
   }; */
 }
 
-// 프로토타입 레벨의 함수
+// 프로토타입 레벨의 함수를 등록한다. 메모리 절약
+// 이렇게 만들면 각각의 인스턴스마다 있지는 않지만 사용 가능.
 Dog.prototype.printName = function () {
   console.log(`${this.name} ${this.emoji}`);
 };
@@ -28,7 +31,7 @@ dog1.printName = function () {
 };
 dog1.printName();
 
-// 정적 레벨
+// 정적 레벨 함수만들기. static function
 Dog.hello = () => {
   console.log('Hello!');
 };

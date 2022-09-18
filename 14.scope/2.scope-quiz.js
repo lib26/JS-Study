@@ -13,6 +13,6 @@ const text = 'global'; // 전역 변수, 전역 스코프 (글로벌 변수, 글
   const text = 'inside block1'; // 지역 변수(로컬변수), 지역 스코프(로컬스코프)
   {
     const text = 'inside block2';
-    console.log(text);
+    console.log(text); // 바로 위에거 출력
   }
 }

@@ -18,6 +18,6 @@ class Cat {}
 
 let x = 1;
 {
-  console.log(x);
+  console.log(x); //에러뜸. 괄호 안에서도 호이스팅이 되기에 밑에 x가 위로 가지만 초기화는 안되어있으니 에러.
   let x = 2;
 }
