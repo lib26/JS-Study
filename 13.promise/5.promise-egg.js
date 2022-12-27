@@ -19,6 +19,7 @@ function getChicken() {
 // return이 생략될 수 있다는 점 알아두기
 getChicken()
   .then((chicken) => {
+    // ㄴ chicken은 getChicken으로부터 반환받은 resolve 데이터. 즉, 🪴 => 🐓
     return fetchEgg(chicken); // 밑에처럼 return 생략 가능.
   })
   .then((egg) => {
