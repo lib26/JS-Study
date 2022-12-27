@@ -18,8 +18,13 @@ async function makeFriedEgg() {
   } catch {
     chicken = '🐔';
   }
+
   const egg = await fetchEgg(chicken);
   return fryEgg(egg);
+
+  // 위에 두줄 코드 대신에 이렇게 마무리해도 됨.
+  // const result = await fryEgg(egg);
+  // return result; -> result라는 string을 resolve하는 promise를 반환한다는 의미
 }
 
 makeFriedEgg().then(console.log);
